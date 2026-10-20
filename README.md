@@ -1,3 +1,2 @@
-# aulasRuby
-# aulasRuby
-# aulasRuby
+# Aulas de Ruby
+Acompanhe meu Aprendizado da linguagem Ruby
