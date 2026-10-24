@@ -15,3 +15,7 @@ end
 puts "----------------------"
 puts "Acrescido 10%: "
 puts acrescidos
+
+puts "-----------"
+faturamento = precos.sum
+puts "O Faturamento sem acrescimos é de #{faturamento}"
