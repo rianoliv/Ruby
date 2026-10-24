@@ -75,3 +75,28 @@ Desafio extra: conte as tentativas e permita jogar novamente.
 Crie um array de preços e utilize each para mostrar cada preço. Depois, utilize map para criar um novo array com os preços acrescidos de 10%.
 
 Desafio extra: calcule o faturamento total usando os valores originais.
+
+11.  Métodos (calculo.rb)
+Exercício: Calculadora de média escolar
+
+Crie um programa que calcule a média de um aluno utilizando métodos.
+
+Requisitos:
+- Peça ao usuário duas notas.
+- Crie um método chamado calcular_media que receba as duas notas como parâmetros.
+- O método deve calcular e retornar a média.
+- Exiba a média na tela.
+- Informe se o aluno foi aprovado (média ≥ 6) ou reprovado (média < 6).
+Desafio extra: crie um segundo método chamado situacao_aluno que receba a média e retorne a situação do aluno.
+
+12. Operador ternário (ternario.rb)
+Exercício: Verificador de idade
+
+Crie um programa que pergunte a idade do usuário e informe se ele é maior ou menor de idade utilizando o operador ternário.
+
+Requisitos:
+- Peça a idade do usuário.
+- Converta a entrada para um número inteiro.
+- Utilize o operador ternário ? : para verificar a idade.
+- Se a idade for maior ou igual a 18, exiba "Maior de idade". Caso contrário, exiba "Menor de idade".
+Desafio extra: utilize o operador ternário para verificar se a idade é par ou ímpar.
