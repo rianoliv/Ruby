@@ -1,0 +1,222 @@
+Rian, vamos tratar isso como uma pequena lista de exercícios de uma disciplina universitária de programação. O objetivo não é apenas fazer o código funcionar, mas desenvolver seu raciocínio lógico, escrever código organizado e aprender a resolver problemas sem depender de IA.
+
+Preparei **5 exercícios em ordem crescente de dificuldade**, considerando o que você já vem estudando em Ruby.
+
+# 📚 Lista de exercícios — Ruby Básico
+
+**Requisitos:** Ruby puro, sem Rails e sem gems externas.
+
+**Conteúdos trabalhados:** variáveis, entrada e saída, condicionais, loops, arrays, hashes, métodos e orientação a objetos.
+
+**Regra:** tente resolver todos sozinho. Consulte sua documentação ou suas anotações, mas não copie soluções prontas.
+
+---
+
+### 1. Sistema de análise de notas
+**Nível: ⭐ Iniciante**
+
+Desenvolva um programa que receba as notas de um aluno e determine sua situação acadêmica.
+
+**Requisitos:**
+- Solicite o nome do aluno.
+- Receba três notas e calcule a média.
+- Informe se o aluno foi aprovado, ficou de recuperação ou foi reprovado.
+- Não permita notas menores que 0 ou maiores que 10.
+- Exiba um relatório com o nome, as notas, a média e a situação final.
+
+**Critério de avaliação:** o programa deve lidar corretamente com notas inválidas e apresentar resultados coerentes.
+
+**Conceitos praticados:** variáveis, `gets.chomp`, conversão de tipos, operadores aritméticos, condicionais e validação de dados.
+
+**Desafio extra:** permita cadastrar vários alunos até que o usuário decida encerrar o programa.
+
+---
+
+### 2. Gerenciador de tarefas
+**Nível: ⭐⭐ Intermediário**
+
+Crie um programa de terminal que permita ao usuário organizar suas tarefas diárias.
+
+O programa deve apresentar um menu semelhante a este:
+
+```text
+===== GERENCIADOR DE TAREFAS =====
+
+1 - Adicionar tarefa
+2 - Listar tarefas
+3 - Concluir tarefa
+4 - Remover tarefa
+5 - Sair
+
+Escolha uma opção:
+```
+
+**Requisitos:**
+- Permita cadastrar tarefas com um título.
+- Armazene as tarefas em um array.
+- Permita listar todas as tarefas cadastradas.
+- Identifique cada tarefa por um número.
+- Permita marcar uma tarefa como concluída.
+- Permita remover uma tarefa.
+- Mantenha o menu funcionando até que o usuário escolha sair.
+- Trate opções inválidas e tentativas de acessar tarefas inexistentes.
+
+**Desafio extra:** cada tarefa deve possuir um título, uma descrição e um status.
+
+**Conceitos praticados:** arrays, hashes, loops, condicionais, métodos e manipulação de coleções.
+
+**Objetivo acadêmico:** aprender a dividir um problema em operações menores e organizar um programa interativo.
+
+---
+
+### 3. Sistema de cadastro de alunos
+**Nível: ⭐⭐⭐ Intermediário**
+
+Desenvolva um sistema simples para administrar os registros de alunos de uma instituição de ensino.
+
+Cada aluno deverá possuir:
+- Nome.
+- Idade.
+- Curso.
+- Média final.
+
+**Requisitos:**
+- Cadastrar novos alunos.
+- Listar todos os alunos cadastrados.
+- Buscar um aluno pelo nome.
+- Calcular a média geral dos alunos cadastrados.
+- Identificar o aluno com a maior média.
+- Impedir o cadastro de alunos com informações inválidas.
+
+Organize os dados utilizando arrays e hashes.
+
+**Exemplo de estrutura de um aluno:**
+
+```ruby
+aluno = {
+  nome: "Carlos",
+  idade: 17,
+  curso: "Desenvolvimento de Sistemas",
+  media: 8.5
+}
+```
+
+Essa estrutura é apenas uma referência para você entender como representar os dados. Desenvolva as funcionalidades por conta própria.
+
+**Desafio extra:** permita atualizar e excluir registros existentes.
+
+**Conceitos praticados:** símbolos, hashes, arrays, iteração, métodos, comparações e organização de dados.
+
+**Objetivo acadêmico:** entender como representar e manipular informações de maneira estruturada.
+
+---
+
+### 4. Sistema bancário simplificado
+**Nível: ⭐⭐⭐⭐ Avançado para Ruby básico**
+
+Crie um programa que simule operações básicas de uma conta bancária.
+
+Aqui, você começará a aplicar os conceitos de orientação a objetos.
+
+**Requisitos:**
+
+Crie uma classe `ContaBancaria` com os seguintes atributos:
+- Titular.
+- Número da conta.
+- Saldo.
+
+A classe deverá possuir métodos para:
+
+1. Depositar dinheiro.
+2. Sacar dinheiro.
+3. Consultar saldo.
+4. Exibir os dados da conta.
+
+**Regras:**
+- Não permita depósitos com valores iguais ou inferiores a zero.
+- Não permita saques com valores iguais ou inferiores a zero.
+- Não permita saques superiores ao saldo disponível.
+- O saldo não deve ser alterado quando uma operação for inválida.
+- O usuário deve conseguir realizar várias operações antes de encerrar o programa.
+
+**Desafio extra:** implemente transferências entre duas contas, garantindo que uma transferência inválida não altere os saldos.
+
+**Conceitos praticados:** classes, objetos, atributos, métodos de instância, `initialize`, `attr_reader`, encapsulamento e condicionais.
+
+**Objetivo acadêmico:** compreender como classes agrupam dados e comportamentos relacionados.
+
+---
+
+### 5. Sistema de biblioteca
+**Nível: ⭐⭐⭐⭐⭐ Desafio final**
+
+Este será seu projeto de consolidação. Desenvolva um sistema de terminal para administrar uma pequena biblioteca.
+
+O sistema deverá permitir o gerenciamento de livros e empréstimos.
+
+**Requisitos funcionais:**
+
+**Cadastro de livros**
+- Registrar título, autor e ano de publicação.
+- Listar os livros disponíveis.
+- Buscar livros pelo título ou pelo autor.
+
+**Gerenciamento de empréstimos**
+- Emprestar um livro disponível.
+- Registrar o nome da pessoa que pegou o livro.
+- Impedir o empréstimo de um livro que já esteja emprestado.
+- Registrar a devolução de um livro.
+- Consultar o status de cada livro.
+
+**Organização do código**
+- Crie uma classe `Livro`.
+- Crie uma classe `Biblioteca`.
+- Utilize métodos para separar as operações.
+- Utilize arrays para armazenar os livros.
+- Utilize condicionais para validar as operações.
+
+Você pode acrescentar uma classe `Emprestimo` se conseguir implementar os requisitos iniciais.
+
+**Desafio extra:** registre o histórico de empréstimos e permita consultar quais livros cada pessoa já pegou emprestados.
+
+**Conceitos praticados:** orientação a objetos, classes, objetos, arrays, hashes, métodos, loops, validação e relacionamento entre objetos.
+
+**Objetivo acadêmico:** integrar os conhecimentos básicos de Ruby em um pequeno sistema com regras de negócio.
+
+---
+
+## Como eu avaliaria seu desempenho
+
+Para cada exercício, utilize os seguintes critérios:
+
+| Critério | Pontuação |
+|---|---:|
+| Funcionalidades implementadas | 4,0 |
+| Lógica e tratamento de erros | 2,0 |
+| Organização e legibilidade do código | 2,0 |
+| Uso adequado dos conceitos de Ruby | 2,0 |
+| **Total** | **10,0** |
+
+Não é necessário obter a pontuação máxima na primeira tentativa. O importante é identificar os problemas e melhorar sua solução.
+
+## Minha recomendação como professor
+
+**Faça os exercícios nesta ordem e não pule diretamente para o sistema de biblioteca.**
+
+Você já demonstrou que consegue trabalhar com condicionais, hashes e entrada de dados em Ruby. Agora, precisa consolidar esses conhecimentos e aprender a estruturar programas maiores.
+
+Sugiro esta sequência de trabalho:
+
+- **Exercício 1:** concentre-se na lógica e nas validações.
+- **Exercício 2:** pratique a criação de métodos e o controle de fluxo.
+- **Exercício 3:** aprenda a organizar e consultar conjuntos de dados.
+- **Exercício 4:** aprofunde-se em orientação a objetos.
+- **Exercício 5:** integre os conceitos em um projeto completo.
+
+Uma regra importante: **primeiro faça funcionar, depois organize e, por último, refatore.** Não tente escrever o código perfeito na primeira tentativa.
+
+Ao terminar cada exercício, teste também situações que não deveriam funcionar. Um bom programador não pensa apenas no caminho ideal: ele prevê os erros que o usuário pode cometer.
+
+E mantenha uma restrição durante essa lista: não utilize Rails, gems externas ou IA para gerar o código. Você pode consultar a documentação oficial do Ruby em [Ruby Documentation](https://docs.ruby-lang.org/en/?utm_source=chatgpt.com).
+
+**Comece pelo exercício 1.** Quando terminar, apresente seu código para avaliação. Vou analisar a lógica, a organização, as boas práticas e os possíveis problemas, explicando o que você precisa melhorar sem simplesmente substituir sua solução por outra pronta.
